@@ -36,7 +36,9 @@ module MultiLogger
     end
 
     def get_rails_logger_class
-      if defined?(ActiveSupport::BufferedLogger)
+      if defined?(ActiveSupport::BroadcastLogger)
+        ActiveSupport::BroadcastLogger
+      elsif defined?(ActiveSupport::BufferedLogger)
         ActiveSupport::BufferedLogger
       elsif defined?(ActiveSupport::Logger)
         ActiveSupport::Logger

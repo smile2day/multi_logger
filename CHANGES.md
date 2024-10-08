@@ -1,5 +1,9 @@
 # Change log
 
+## 0.2.1 - 2024/10/08
+
+* [Enhancement] Support for `ActiveSupport::BroadcastLogger` - smile2day
+
 ## 0.2.0 - 2020/07/14
 
 * [Enhancement] Accept `STDOUT` as log path - Konstantin
